@@ -1,0 +1,12 @@
+type User {
+  id: ID! @unique
+  name: String!
+  birthdate: Int @default(value: 1990)
+  gears: [Gear!]!
+}
+
+type Gear {
+  id: ID! @unique
+  name: String
+  type: String
+}
